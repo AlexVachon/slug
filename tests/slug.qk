@@ -1,0 +1,15 @@
+use test
+from test use { TestCase }
+
+// comes from src/index 
+// reads quirk.toml
+use slug
+
+define main() -> void {
+    base := "Hello World 123 !"
+    t1 := TestCase("slug function", fn() {
+        test.assert_eq(slug(base), "hello-world-123")
+    })
+
+    test.run_all([t1])
+}

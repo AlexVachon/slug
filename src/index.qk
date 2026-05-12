@@ -1,0 +1,19 @@
+define slug(s: String) -> String {
+    out := ""
+    prev_dash := true
+
+    for c in s {
+        if c.is_alpha() or c.is_digit() {
+            out = out.append(c.lower())
+            prev_dash = false
+        } elif not prev_dash {
+            out = out.append('-')
+            prev_dash = true
+        }
+    }
+
+    if out.endswith("-") {
+        out = out.substring(0, out.length() - 1)
+    }
+    return out
+}
