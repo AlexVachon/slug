@@ -4,10 +4,10 @@ define slug(s: String) -> String {
 
     for c in s {
         if c.is_alpha() or c.is_digit() {
-            out = out.append(c.lower())
+            out += c.lower()
             prev_dash = false
         } elif not prev_dash {
-            out = out.append('-')
+            out += "-"
             prev_dash = true
         }
     }

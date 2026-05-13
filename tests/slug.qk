@@ -3,7 +3,7 @@ from test use { TestCase }
 
 // comes from src/index 
 // reads quirk.toml
-use slug
+from slug use { slug }
 
 define main() -> void {
     base := "Hello World 123 !"
