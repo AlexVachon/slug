@@ -3,6 +3,6 @@ version     = "0.1.0"
 description = "Convert strings to URL-safe slugs"
 author      = "Alex Vachon <alex.vachon@outlook.com>"
 license     = "MIT"
+repository  = "https://github.com/AlexVachon/slug.git"
 
 [deps]
-slug = "https://github.com/AlexVachon/slug.git"
