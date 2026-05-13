@@ -1,3 +1,14 @@
+---
+Convert a free-form string into a URL-safe slug.
+
+Letters are lowercased; runs of any non-alphanumeric characters
+collapse into a single `-`; leading and trailing dashes are trimmed.
+
+@example
+print(slug("Hello, World!"))     // "hello-world"
+print(slug("  C++ & Quirk  "))   // "c-quirk"
+print(slug("já vu_2026"))        // "já-vu-2026"
+---
 define slug(s: String) -> String {
     out := ""
     prev_dash := true
