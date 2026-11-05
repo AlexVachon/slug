@@ -1,5 +1,6 @@
 name        = "slug"
 version     = "1.0.1"
+quirk-version = ">=7.6.0"
 description = "Convert strings to URL-safe slugs"
 author      = "Alex Vachon <alex.vachon@outlook.com>"
 license     = "MIT"
